@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="css-file.css">
+    <script src="js-file.js" defer></script>
+</head>
+
+<body>
+    <div class="overall-container">
+        <div class="banner">
+            <h1>Sketch sa mère</h1>
+        </div>
+
+        <div class="playground">
+            <div class="panel-control">
+                <button id="clear-grid">Erase everything.</button>
+                <input type="range" id="range-slider" value="16" min="1" max="64" onmousemove="rangeSliderValue(this.value)" onchange="rangeSliderValue(this.value)">
+                <p class="grid-size">Grid size: <span id="range-value">24</span> x <span id="range-value">24</span></p>
+            </div>
+            <div class="container">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
